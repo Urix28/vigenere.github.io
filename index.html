@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html onpaste="return false" ondragstart="return false;" ondrop="return false;" oncontextmenu="return false" onkeydown="return efe(event)">
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" type="image/x-icon" href="img/1.svg">
+	<title>Cifrado Vigenere</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script type="text/javascript" src="js/validar.js"></script>
+</head>
+<body onpaste="return false" ondragstart="return false;" ondrop="return false;" oncontextmenu="return false" >
+   
+<header>
+   
+<img id="java" src="img/1.svg">
+<h1>Cifrado Vigenere</h1>
+ </header>
+ <section id="circu">
+   <img src="img/michi.gif">
+</section>
+ 
+<form name="formulario" method="post" action="" onsubmit="return numeros(this)" onpaste="return false" ondragstart="return false;" ondrop="return false;">
+   <p>Ingresa la frase a encriptar o desencriptar</p>
+   <textarea id="cadena"  onpaste="return false" ondragstart="return false;" ondrop="return false;" oncontextmenu="return false" 
+onkeypress=""></textarea>
+   <br>
+   <br>
+   <p>Ingresa la contraseña</p>
+   <textarea id="contra"  onpaste="return false" ondragstart="return false;" ondrop="return false;" oncontextmenu="return false" 
+onkeypress="return validaLetras(event,this)"></textarea>
+   <br>
+   <br>
+   <p>      Resultado
+   </p>
+   
+   <textarea readonly id="resultado" readonly onpaste="return false" ondragstart="return false;" ondrop="return false;" oncontextmenu="return false"  
+   onkeypress="return validaLetras(event,this)"></textarea>
+   <br>
+   <br>
+   <br>
+   <input type="button" value="Cifrar" onclick="FraseFinal(Algoritmo(true))">
+   
+   <br>
+   <br>
+   
+        <input type="button" value="Decifrar" onclick="FraseFinal(Algoritmo(false))"></p>
+
+   <br>
+   <br>
+   <input type="reset" name="borrar" value="Borrar">
+    
+        <script src="js/logica.js"></script>
+
+  </form>
+  
+  
+
+</body>
+</html>
